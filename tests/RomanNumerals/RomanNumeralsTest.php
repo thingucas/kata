@@ -22,7 +22,7 @@ class RomanNumeralsTest extends \PHPUnit_Framework_TestCase
      * @param string $romanNumerals
      * @dataProvider romanNumeralsData
      */
-    public function testFinal(int $arabicNumber, string $romanNumerals)
+    public function xtestFinal(int $arabicNumber, string $romanNumerals)
     {
         $this->assertSame(
             $romanNumerals,
