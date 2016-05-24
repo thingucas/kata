@@ -9,7 +9,7 @@ class RomanNumeralsTest extends \PHPUnit_Framework_TestCase
     public function setUp()
     {
         set_time_limit(1);
-        //$this->romanNumerals = new RomanNumerals;
+        $this->romanNumerals = new RomanNumerals;
     }
 
     public function testConversion()

@@ -3,10 +3,48 @@ namespace pdt256\kata\PrimeFactors;
 
 class PrimeFactorsTest extends \PHPUnit_Framework_TestCase
 {
-    public function testSetup()
-    {
-        $primeFactors = new PrimeFactors;
+    /** @var PrimeFactorsInterface */
+    private $primeFactors;
 
-        $this->assertTrue($primeFactors instanceof PrimeFactors);
+    public function setUp()
+    {
+        set_time_limit(1);
+        $this->primeFactors = new PrimeFactors;
+    }
+
+    public function testGenerate()
+    {
+        //$this->assertSame([], $this->primeFactors->generate(1));
+    }
+
+    /**
+     * @param int $number
+     * @param array $primes
+     * @dataProvider primeFactorsData
+     */
+    public function xtestFinal(int $number, array $primes)
+    {
+        $result = $this->primeFactors->generate($number);
+        $this->assertEquals(
+            $primes,
+            $result,
+            'Input: ' . $number . ', Expected: ' . json_encode($primes) . ', Received: ' . json_encode($result)
+        );
+    }
+
+    public function primeFactorsData()
+    {
+        return [
+            [1, []],
+            [2, [2]],
+            [3, [3]],
+            [4, [2, 2]],
+            [5, [5]],
+            [6, [2, 3]],
+            [7, [7]],
+            [8, [2, 2, 2]],
+            [9, [3, 3]],
+            [(2 * 3 * 5 * 7 * 13), [2, 3, 5, 7, 13]],
+        ];
     }
 }
