@@ -6,5 +6,6 @@ class RomanNumerals implements RomanNumeralsInterface
     public function convertToRoman(int $arabicNumber) : string
     {
         // TODO: Implement convertToRoman() method.
+        return '';
     }
 }

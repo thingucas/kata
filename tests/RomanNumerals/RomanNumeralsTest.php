@@ -14,7 +14,7 @@ class RomanNumeralsTest extends \PHPUnit_Framework_TestCase
 
     public function testConversion()
     {
-        //$this->assertSame('I', $this->romanNumerals->convertArabic(1));
+        //$this->assertSame('I', $this->romanNumerals->convertToRoman(1));
     }
 
     /**
