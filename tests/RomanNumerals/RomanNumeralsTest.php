@@ -9,7 +9,7 @@ class RomanNumeralsTest extends \PHPUnit_Framework_TestCase
     public function setUp()
     {
         set_time_limit(1);
-        $this->romanNumerals = new RomanNumerals;
+        $this->romanNumerals = new RomanNumerals();
     }
 
     public function testConversion()
@@ -26,7 +26,7 @@ class RomanNumeralsTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertSame(
             $romanNumerals,
-            $this->romanNumerals->convertArabic($arabicNumber),
+            $this->romanNumerals->convertToRoman($arabicNumber),
             'Input: ' . $arabicNumber . ', Expected: ' . $romanNumerals
         );
     }
@@ -134,17 +134,21 @@ class RomanNumeralsTest extends \PHPUnit_Framework_TestCase
             [98, 'XCVIII'],
             [99, 'XCIX'],
             [100, 'C'],
+            [400, 'CD'],
+            [500, 'D'],
             [501, 'DI'],
             [550, 'DL'],
             [530, 'DXXX'],
             [707, 'DCCVII'],
             [890, 'DCCCXC'],
+            [1000, 'M'],
             [1500, 'MD'],
             [1800, 'MDCCC'],
             [900, 'CM'],
             [846, 'DCCCXLVI'],
             [1999, 'MCMXCIX'],
             [2008, 'MMVIII'],
+            [3999, 'MMMCMXCIX'],
         ];
     }
 }
