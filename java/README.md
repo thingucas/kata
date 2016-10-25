@@ -1,16 +1,4 @@
-# PHP Kata
-
-## Install
-
-```
-composer install
-```
-
-## Unit Tests:
-
-```
-vendor/bin/phpunit
-```
+# Java Kata
 
 ## License
 

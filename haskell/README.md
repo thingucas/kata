@@ -1,15 +1,9 @@
-# PHP Kata
+# Haskell Kata
 
 ## Install
 
 ```
-composer install
-```
-
-## Unit Tests:
-
-```
-vendor/bin/phpunit
+brew install ghc cabal-install
 ```
 
 ## License
