@@ -1,4 +1,6 @@
 /.idea/*
 !/.idea/runConfigurations
 !/.idea/scopes
+/out
+/lib
 .DS_Store
