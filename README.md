@@ -1,6 +1,5 @@
 Kata
 ====
-[![Downloads](https://img.shields.io/github/downloads/pdt256/kata/total.svg)]()
 [![License](https://img.shields.io/github/license/pdt256/kata.svg)](https://github.com/pdt256/kata/blob/master/LICENSE.txt)
 
 ## License
