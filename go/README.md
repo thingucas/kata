@@ -6,6 +6,12 @@
 brew install go
 ```
 
+## Run unit tests
+
+```
+cd src/PrimeFactors && go test
+```
+
 ## License
 
 The MIT License (MIT)

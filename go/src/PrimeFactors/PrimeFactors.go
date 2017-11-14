@@ -1,11 +1,12 @@
 package PrimeFactors
 
-func Generate(number int) []int {
-	var factors []int
+type PrimeFactorGenerator interface {
+	Generate(number int) []int
+}
 
-	if (number == 2) {
-		factors = append(factors, 2)
-	}
+type PrimeFactors struct {
+}
 
-	return factors
+func (p *PrimeFactors) Generate(number int) (factors []int) {
+	return
 }
