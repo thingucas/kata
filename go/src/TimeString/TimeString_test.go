@@ -9,7 +9,7 @@ func TestTimeStringSum(t *testing.T) {
 	s := TimeString{}
 
 	assert.Equal(t, "0:0:0", s.PrintSum(""))
-	//assert.Equal(t, "0:0:1", s.PrintSum([]string{"0:1"}))
+	//assert.Equal(t, "0:0:1", s.PrintSum("0:1"))
 }
 
 func xTestAllTimeString(t *testing.T) {
