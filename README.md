@@ -2,6 +2,12 @@ Kata
 ====
 [![License](https://img.shields.io/github/license/pdt256/kata.svg)](https://github.com/pdt256/kata/blob/master/LICENSE.txt)
 
+## Katas
+
+- [Roman Numerals](docs/RomanNumerals.md)
+- [Prime Factors](docs/PrimeFactors.md)
+- [Time String](docs/TimeString.md)
+
 ## License
 
 The MIT License (MIT)
