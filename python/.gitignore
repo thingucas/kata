@@ -1,5 +1,5 @@
-/.idea/*.iws
-/.idea/workspace.xml
-/.idea/tasks.xml
+/.idea/*
+!/.idea/runConfigurations
+!/.idea/scopes
 __pycache__/
 *.py[cod]
