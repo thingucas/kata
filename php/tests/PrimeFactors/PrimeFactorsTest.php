@@ -3,7 +3,7 @@ namespace pdt256\kata\PrimeFactors;
 
 class PrimeFactorsTest extends \PHPUnit_Framework_TestCase
 {
-    /** @var PrimeFactorsInterface */
+    /** @var PrimeFactorGeneratorInterface */
     private $primeFactors;
 
     public function setUp()
@@ -14,7 +14,8 @@ class PrimeFactorsTest extends \PHPUnit_Framework_TestCase
 
     public function testGenerate()
     {
-        //$this->assertSame([], $this->primeFactors->generate(1));
+        $this->assertSame([], $this->primeFactors->generate(1));
+        //$this->assertSame([2], $this->primeFactors->generate(2));
     }
 
     /**
@@ -44,6 +45,7 @@ class PrimeFactorsTest extends \PHPUnit_Framework_TestCase
             [7, [7]],
             [8, [2, 2, 2]],
             [9, [3, 3]],
+            [360, [2, 2, 2, 3, 3, 5]],
             [(2 * 3 * 5 * 7 * 13), [2, 3, 5, 7, 13]],
         ];
     }
