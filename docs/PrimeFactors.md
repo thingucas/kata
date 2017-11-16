@@ -8,7 +8,7 @@ That list contains the prime factors in numerical sequence.
 
 ## Languages
 
-- [Go](../go/src/PrimeFactors)
-- [Java](../java/src/PrimeFactors)
-- [PHP](../php/src/PrimeFactors)
-- [Python](../python/src/PrimeFactors)
+- [Go](../../../go/src/PrimeFactors)
+- [Java](../../../java/src/PrimeFactors)
+- [PHP](../../../php/src/PrimeFactors)
+- [Python](../../../python/src/PrimeFactors)
