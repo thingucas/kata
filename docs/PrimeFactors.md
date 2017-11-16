@@ -8,7 +8,7 @@ That list contains the prime factors in numerical sequence.
 
 ## Languages
 
-- [Go](/pdt256/kata/tree/master/go/src/PrimeFactors)
-- [Java](/pdt256/kata/tree/master/java/src/PrimeFactors)
-- [PHP](/pdt256/kata/tree/master/php/src/PrimeFactors)
-- [Python](/pdt256/kata/tree/master/python/src/PrimeFactors)
+- [Go](https://github.com/pdt256/kata/tree/master/go/src/PrimeFactors)
+- [Java](https://github.com/pdt256/kata/tree/master/java/src/PrimeFactors)
+- [PHP](https://github.com/pdt256/kata/tree/master/php/src/PrimeFactors)
+- [Python](https://github.com/pdt256/kata/tree/master/python/src/PrimeFactors)
