@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Roman Numerals Tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" singleton="true">
+    <TestRunner scope="XML" options="--testsuite RomanNumerals" />
+    <method />
+  </configuration>
+</component>

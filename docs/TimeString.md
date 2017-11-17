@@ -14,3 +14,5 @@ Example:
 
 - [Go](https://github.com/pdt256/kata/tree/master/go/src/TimeString)
 - [Java](https://github.com/pdt256/kata/tree/master/java/src/TimeString)
+
+[More Katas](https://github.com/pdt256/kata)

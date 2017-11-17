@@ -3,17 +3,18 @@ namespace pdt256\kata\RomanNumerals;
 
 class RomanNumeralsTest extends \PHPUnit_Framework_TestCase
 {
-    /** @var RomanNumeralsInterface */
+    /** @var RomanNumeralsConverterInterface */
     protected $romanNumerals;
 
     public function setUp()
     {
         set_time_limit(1);
-        $this->romanNumerals = new RomanNumerals();
+        $this->romanNumerals = new RomanNumeralsConverter();
     }
 
     public function testConversion()
     {
+        $this->assertSame('', $this->romanNumerals->convertToRoman(0));
         //$this->assertSame('I', $this->romanNumerals->convertToRoman(1));
     }
 

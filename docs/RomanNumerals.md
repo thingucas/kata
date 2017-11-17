@@ -1,9 +1,22 @@
-
 # Roman Numerals
 
 ## Rules
 
-Given a positive integer number (eg. 42) determine its Roman numeral representation as a String (eg "XLII").
+Implement the `RomanNumeralsConverter` Interface. The `ConvertToRoman` method takes a positive Arabic integer and returns the Roman Numeral as a string.
+
+Example:
+
+- Input: 42
+- Output: XLII
+
+## Languages
+
+- [Go](https://github.com/pdt256/kata/tree/master/go/src/RomanNumerals)
+- [PHP](https://github.com/pdt256/kata/tree/master/php/src/PrimeFactors)
+
+[More Katas](https://github.com/pdt256/kata)
+
+## Details
 
 Roman numerals are expressed by letters of the alphabet:
 

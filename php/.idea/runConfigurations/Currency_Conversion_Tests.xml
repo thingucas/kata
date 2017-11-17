@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="All Currency Conversion Tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" singleton="true">
+  <configuration default="false" name="Currency Conversion Tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" singleton="true">
     <TestRunner scope="XML" options="--testsuite CurrencyConversion" />
     <method />
   </configuration>

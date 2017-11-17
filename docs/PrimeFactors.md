@@ -12,3 +12,5 @@ That list contains the prime factors in numerical sequence.
 - [Java](https://github.com/pdt256/kata/tree/master/java/src/PrimeFactors)
 - [PHP](https://github.com/pdt256/kata/tree/master/php/src/PrimeFactors)
 - [Python](https://github.com/pdt256/kata/tree/master/python/src/PrimeFactors)
+
+[More Katas](https://github.com/pdt256/kata)
