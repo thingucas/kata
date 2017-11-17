@@ -12,7 +12,7 @@ Example:
 ## Languages
 
 - [Go](https://github.com/pdt256/kata/tree/master/go/src/RomanNumerals)
-- [PHP](https://github.com/pdt256/kata/tree/master/php/src/PrimeFactors)
+- [PHP](https://github.com/pdt256/kata/tree/master/php/src/RomanNumerals)
 
 [More Katas](https://github.com/pdt256/kata)
 
