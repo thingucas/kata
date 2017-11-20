@@ -1,6 +1,5 @@
 package TimeString;
 
-import static java.util.Arrays.asList;
 import static org.junit.Assert.*;
 
 import org.junit.Before;
