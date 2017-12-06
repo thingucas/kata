@@ -63,7 +63,7 @@ func Test_BackstagePasses(t *testing.T) {
 }
 
 func Test_Conjured(t *testing.T) {
-	item := Item{"Conjured", 2, 10}
+	item := Item{"Conjured Mana Cake", 2, 10}
 	t.Skip(item)
 
 	testUpdateItem(t, &item, 1, 8)
