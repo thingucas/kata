@@ -7,6 +7,7 @@ Kata
 - [Roman Numerals](docs/RomanNumerals.md)
 - [Prime Factors](docs/PrimeFactors.md)
 - [Time String](docs/TimeString.md)
+- [Gilded Rose](docs/GildedRose.md)
 
 ## License
 
