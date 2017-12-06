@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Unit Tests (Gilded Rose)" type="GoTestRunConfiguration" factoryName="Go Test" singleton="true">
+    <module name="go" />
+    <working_directory value="$PROJECT_DIR$/src/GildedRose" />
+    <framework value="gotest" />
+    <kind value="DIRECTORY" />
+    <directory value="$PROJECT_DIR$/src/GildedRose" />
+    <filePath value="$PROJECT_DIR$" />
+    <method />
+  </configuration>
+</component>
