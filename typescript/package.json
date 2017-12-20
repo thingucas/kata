@@ -1,0 +1,33 @@
+{
+  "name": "pdt256-kata",
+  "version": "1.0.0",
+  "description": "Kata for Typescript",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch --config=jest.config.json"
+  },
+  "author": "Jason Raimondi <jason@raimondi.us>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^21.1.9",
+    "ts-jest": "^22.0.0",
+    "typescript": "^2.6.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "dependencies": {
+    "jest": "^22.0.3"
+  }
+}
