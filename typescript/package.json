@@ -10,6 +10,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^21.1.9",
+    "jest": "^22.0.3",
     "ts-jest": "^22.0.0",
     "typescript": "^2.6.2"
   },
@@ -26,8 +27,5 @@
       "json",
       "node"
     ]
-  },
-  "dependencies": {
-    "jest": "^22.0.3"
   }
 }
