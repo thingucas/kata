@@ -4,7 +4,7 @@
   "description": "Kata for Typescript",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch --config=jest.config.json"
+    "test:watch": "jest --watch"
   },
   "author": "Jason Raimondi <jason@raimondi.us>",
   "license": "MIT",
