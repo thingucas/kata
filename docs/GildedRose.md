@@ -6,7 +6,7 @@ Add support for the "Conjured Mana Cake" item. It degrades in Quality twice as f
 
 ## Languages
 
-- [Go](https://github.com/pdt256/kata/tree/master/go/src/GildedRose)
+- [Go](https://github.com/pdt256/kata/tree/master/go/pkg/gildedrose)
 
 [More Katas](https://github.com/pdt256/kata)
 

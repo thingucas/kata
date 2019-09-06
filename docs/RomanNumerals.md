@@ -11,7 +11,7 @@ Example:
 
 ## Languages
 
-- [Go](https://github.com/pdt256/kata/tree/master/go/src/RomanNumerals)
+- [Go](https://github.com/pdt256/kata/tree/master/go/pkg/romannumerals)
 - [PHP](https://github.com/pdt256/kata/tree/master/php/src/RomanNumerals)
 - [Typescript](https://github.com/pdt256/kata/tree/master/typescript/src/RomanNumerals)
 
