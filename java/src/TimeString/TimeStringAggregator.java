@@ -1,5 +1,5 @@
 package TimeString;
 
 public interface TimeStringAggregator {
-    String printSum(String times);
+    String sumOfTimes(String times);
 }

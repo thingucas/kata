@@ -14,8 +14,8 @@ class RomanNumeralsTest extends \PHPUnit_Framework_TestCase
 
     public function testConversion()
     {
-        $this->assertSame('', $this->romanNumerals->convertToRoman(0));
-        //$this->assertSame('I', $this->romanNumerals->convertToRoman(1));
+        $this->assertSame('', $this->romanNumerals->arabicToRoman(0));
+        //$this->assertSame('I', $this->romanNumerals->arabicToRoman(1));
     }
 
     /**
@@ -27,7 +27,7 @@ class RomanNumeralsTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertSame(
             $romanNumerals,
-            $this->romanNumerals->convertToRoman($arabicNumber),
+            $this->romanNumerals->arabicToRoman($arabicNumber),
             'Input: ' . $arabicNumber . ', Expected: ' . $romanNumerals
         );
     }

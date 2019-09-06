@@ -2,7 +2,7 @@
 
 ## Rules
 
-Implement `timestring.SumOfTimes` which takes a list of strings (minutes and seconds) and returns
+Implement the `SumOfTimes` method which takes a list of strings (minutes and seconds) and returns
 the sum of the times (hours, minutes, and seconds) as a single string.
 
 Example:
