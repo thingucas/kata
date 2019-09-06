@@ -1,27 +1,26 @@
-package PrimeFactors
+package primefactors_test
 
 import (
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
+
+	"github.com/pdt256/kata/go/pkg/primefactors"
 )
 
 func TestPrimeFactors(t *testing.T) {
-	p := PrimeFactors{}
-
-	assert.Equal(t, []int(nil), p.Generate(1))
-	//assert.Equal(t, []int{2}, p.Generate(2))
+	assert.Equal(t, []int(nil), primefactors.Generate(1))
+	//assert.Equal(t, []int{2}, primefactors.Generate(2))
 }
 
 func xTestAllPrimeFactors(t *testing.T) {
-	p := PrimeFactors{}
-
 	for _, data := range primeFactorsData {
-		assert.Equal(t, data.expected, p.Generate(data.number))
+		assert.Equal(t, data.expected, primefactors.Generate(data.number))
 	}
 }
 
 var primeFactorsData = []struct {
-	number int
+	number   int
 	expected []int
 }{
 	{1, []int(nil)},

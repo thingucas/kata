@@ -1,27 +1,26 @@
-package RomanNumerals
+package romannumerals_test
 
 import (
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
+
+	"github.com/pdt256/kata/go/pkg/romannumerals"
 )
 
 func TestRomanNumerals(t *testing.T) {
-	r := RomanNumerals{}
-
-	assert.Equal(t, "", r.ConvertToRoman(0))
-	//assert.Equal(t, "I", r.ConvertToRoman(1))
+	assert.Equal(t, "", romannumerals.ArabicToRoman(0))
+	//assert.Equal(t, "I", romannumerals.ArabicToRoman(1))
 }
 
 func xTestAllRomanNumerals(t *testing.T) {
-	r := RomanNumerals{}
-
 	for _, data := range romanNumeralsData {
-		assert.Equal(t, data.expected, r.ConvertToRoman(data.number))
+		assert.Equal(t, data.expected, romannumerals.ArabicToRoman(data.number))
 	}
 }
 
 var romanNumeralsData = []struct {
-	number int
+	number   int
 	expected string
 }{
 	{1, "I"},

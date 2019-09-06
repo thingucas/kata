@@ -1,15 +1,9 @@
 # Go Kata
 
-## Install
-
-```
-brew install go
-```
-
 ## Run unit tests
 
 ```
-cd src/PrimeFactors && go test
+go test ./...
 ```
 
 ## License

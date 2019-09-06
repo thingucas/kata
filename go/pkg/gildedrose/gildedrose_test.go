@@ -1,23 +1,26 @@
-package GildedRose
+package gildedrose_test
 
 import (
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
+
+	"github.com/pdt256/kata/go/pkg/gildedrose"
 )
 
 func Test_RegularItem(t *testing.T) {
-	item := Item{"+5 Dexterity Vest", 2, 8}
+	item := gildedrose.Item{"+5 Dexterity Vest", 2, 8}
 
 	testUpdateItem(t, &item, 1, 7)
 	testUpdateItem(t, &item, 0, 6)
 	testUpdateItem(t, &item, -1, 4)
 	testUpdateItem(t, &item, -2, 2)
 	testUpdateItem(t, &item, -3, 0)
-	testUpdateItem(t, &item,-4, 0)
+	testUpdateItem(t, &item, -4, 0)
 }
 
 func Test_AgedBrie(t *testing.T) {
-	item := Item{"Aged Brie", 2, 0}
+	item := gildedrose.Item{"Aged Brie", 2, 0}
 
 	testUpdateItem(t, &item, 1, 1)
 	testUpdateItem(t, &item, 0, 2)
@@ -26,7 +29,7 @@ func Test_AgedBrie(t *testing.T) {
 }
 
 func Test_AgedBrie50Cap(t *testing.T) {
-	item := Item{"Aged Brie", 10, 48}
+	item := gildedrose.Item{"Aged Brie", 10, 48}
 
 	testUpdateItem(t, &item, 9, 49)
 	testUpdateItem(t, &item, 8, 50)
@@ -34,14 +37,14 @@ func Test_AgedBrie50Cap(t *testing.T) {
 }
 
 func Test_Sulfuras(t *testing.T) {
-	item := Item{"Sulfuras, Hand of Ragnaros", 0, 80}
+	item := gildedrose.Item{"Sulfuras, Hand of Ragnaros", 0, 80}
 
 	testUpdateItem(t, &item, 0, 80)
 	testUpdateItem(t, &item, 0, 80)
 }
 
 func Test_BackstagePasses(t *testing.T) {
-	item := Item{"Backstage passes to a TAFKAL80ETC concert", 15, 20}
+	item := gildedrose.Item{"Backstage passes to a TAFKAL80ETC concert", 15, 20}
 
 	testUpdateItem(t, &item, 14, 21)
 	testUpdateItem(t, &item, 13, 22)
@@ -63,7 +66,7 @@ func Test_BackstagePasses(t *testing.T) {
 }
 
 func Test_Conjured(t *testing.T) {
-	item := Item{"Conjured Mana Cake", 2, 10}
+	item := gildedrose.Item{"Conjured Mana Cake", 2, 10}
 	t.Skip(item)
 
 	testUpdateItem(t, &item, 1, 8)
@@ -72,9 +75,8 @@ func Test_Conjured(t *testing.T) {
 	testUpdateItem(t, &item, -2, 0)
 }
 
-
-func testUpdateItem(t *testing.T, item *Item, expectedSellIn int, expectedQuality int) {
-	UpdateItem(item)
-	assert.Equal(t, expectedSellIn, item.sellIn)
-	assert.Equal(t, expectedQuality, item.quality)
+func testUpdateItem(t *testing.T, item *gildedrose.Item, expectedSellIn int, expectedQuality int) {
+	gildedrose.UpdateItem(item)
+	assert.Equal(t, expectedSellIn, item.SellIn)
+	assert.Equal(t, expectedQuality, item.Quality)
 }

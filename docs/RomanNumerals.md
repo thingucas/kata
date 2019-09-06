@@ -2,7 +2,7 @@
 
 ## Rules
 
-Implement the `RomanNumeralsConverter` Interface. The `ConvertToRoman` method takes a positive Arabic integer and returns the Roman Numeral as a string.
+Implement `romannumerals.ArabicToRoman` method takes a positive Arabic integer and returns the Roman Numeral as a string.
 
 Example:
 

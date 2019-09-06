@@ -2,7 +2,7 @@
 
 ## Rules
 
-Implement the `PrimeFactorGenerator` interface.
+Implement `primefactors.Generator`.
 The `Generate` method takes an integer argument and returns a list of integers.
 That list contains the prime factors in numerical sequence.
 

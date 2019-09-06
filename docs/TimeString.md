@@ -2,7 +2,7 @@
 
 ## Rules
 
-Implement the `TimeStringAggregator` interface. The `PrintSum` method takes a list of strings (minutes and seconds) and returns
+Implement `timestring.SumOfTimes` which takes a list of strings (minutes and seconds) and returns
 the sum of the times (hours, minutes, and seconds) as a single string.
 
 Example:
