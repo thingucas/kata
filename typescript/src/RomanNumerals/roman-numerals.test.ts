@@ -1,19 +1,18 @@
-import { RomanNumerals } from './roman-numerals';
+import {RomanNumerals} from './roman-numerals';
 
 let romanNumerals;
 
 describe('RomanNumeral Test Module', () => {
-  beforeEach(() => {
-      romanNumerals = new RomanNumerals();
-  });
+    beforeEach(() => {
+        romanNumerals = new RomanNumerals();
+    });
 
-  afterEach(() => {
-      romanNumerals = null;
-  });
+    afterEach(() => {
+        romanNumerals = null;
+    });
 
-  it('Converts the value to the roman numeral equivalent.', () => {
-    expect(romanNumerals.convertToRoman(1)).toEqual('I')
-    // expect(romanNumerals.generate(2)).toEqual('II')
-  });
+    it('Converts the value to the roman numeral equivalent.', () => {
+        expect(romanNumerals.convertToRoman(1)).toEqual('I')
+        // expect(romanNumerals.convertToRoman(2)).toEqual('II')
+    });
 });
-
