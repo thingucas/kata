@@ -1,5 +1,5 @@
 export class RomanNumerals {
-    public convertToRoman(romanNumeral: number): string {
+    public arabicToRoman(romanNumeral: number): string {
         return 'I';
     }
 }

@@ -12,7 +12,7 @@ describe('RomanNumeral Test Module', () => {
     });
 
     it('Converts the value to the roman numeral equivalent.', () => {
-        expect(romanNumerals.convertToRoman(1)).toEqual('I')
-        // expect(romanNumerals.convertToRoman(2)).toEqual('II')
+        expect(romanNumerals.arabicToRoman(1)).toEqual('I')
+        // expect(romanNumerals.arabicToRoman(2)).toEqual('II')
     });
 });
