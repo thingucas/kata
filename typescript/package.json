@@ -9,10 +9,10 @@
   "author": "Jason Raimondi <jason@raimondi.us>",
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^21.1.9",
-    "jest": "^22.0.3",
-    "ts-jest": "^22.0.0",
-    "typescript": "^2.6.2"
+    "@types/jest": "^24.0.19",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4"
   },
   "jest": {
     "transform": {
