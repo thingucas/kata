@@ -10,10 +10,11 @@ import (
 
 func TestPrimeFactors(t *testing.T) {
 	assert.Equal(t, []int(nil), primefactors.Generate(1))
-	//assert.Equal(t, []int{2}, primefactors.Generate(2))
+	// assert.Equal(t, []int{2}, primefactors.Generate(2))
 }
 
-func xTestAllPrimeFactors(t *testing.T) {
+func TestAllPrimeFactors(t *testing.T) {
+	t.Skip()
 	for _, data := range primeFactorsData {
 		assert.Equal(t, data.expected, primefactors.Generate(data.number))
 	}

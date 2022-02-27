@@ -10,10 +10,11 @@ import (
 
 func TestRomanNumerals(t *testing.T) {
 	assert.Equal(t, "", romannumerals.ArabicToRoman(0))
-	//assert.Equal(t, "I", romannumerals.ArabicToRoman(1))
+	// assert.Equal(t, "I", romannumerals.ArabicToRoman(1))
 }
 
-func xTestAllRomanNumerals(t *testing.T) {
+func TestAllRomanNumerals(t *testing.T) {
+	t.Skip()
 	for _, data := range romanNumeralsData {
 		assert.Equal(t, data.expected, romannumerals.ArabicToRoman(data.number))
 	}
