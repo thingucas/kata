@@ -8,8 +8,8 @@ import (
 	"github.com/pdt256/kata/go/pkg/lc/leetcode/lc253_meeting_rooms_II"
 )
 
-func TestCanAttend(t *testing.T) {
-	t.Skip()
+func TestMinRooms(t *testing.T) {
+	// t.Skip()
 	table := []struct {
 		Name   string
 		Input  [][]int
@@ -31,6 +31,28 @@ func TestCanAttend(t *testing.T) {
 				{2, 4},
 			},
 			Output: 1,
+		},
+		{
+			Name: "Example 3",
+			Input: [][]int{
+				{0, 3},
+				{1, 4},
+				{2, 5},
+				{3, 6},
+				{4, 7},
+			},
+			Output: 3,
+		},
+		{
+			Name: "Example 4",
+			Input: [][]int{
+				{0, 2},
+				{1, 3},
+				{4, 6},
+				{5, 7},
+				{5, 8},
+			},
+			Output: 3,
 		},
 	}
 
