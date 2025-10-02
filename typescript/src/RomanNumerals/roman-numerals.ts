@@ -3,34 +3,43 @@ export class RomanNumerals {
 
     public arabicToRoman(arabicNumber: number): string {
         const arabicNumberAsString: string = arabicNumber.toString();
-        const arabicNumberLength: number = arabicNumberAsString.length
         let romanNumber = ""
 
-        for (let i = 0; i < arabicNumberLength; i++) {
+        for (let i = 0; i < arabicNumberAsString.length; i++) {
             const arabicDigit = Number(arabicNumberAsString.charAt(i))
-            const potency = arabicNumberLength - (i + 1)
-            romanNumber += this.convertToRoman(arabicDigit,  potency)
+            const potency = arabicNumberAsString.length - (i + 1)
+            romanNumber += this.convertDecimalPotency(arabicDigit,  potency)
         }
         return romanNumber;
     }
 
 
-    public convertToRoman(arabicDigit: number, potency: number) {
+    private convertDecimalPotency(arabicDigit: number, potency: number) {
         let baseIndex = 2 * potency
-        if (arabicDigit === 0) { return "" };
-        if(arabicDigit < 4) {
-            return this.ROMAN_DIGITS[baseIndex].repeat(arabicDigit)
+        if(this.isNumberWithSubstraction(arabicDigit)) {
+            return this.getSubtrahend(baseIndex) + this.getMinuend(arabicDigit,baseIndex)
         }
-        if(arabicDigit < 9) {
-            const rest = arabicDigit - 5
-            if(rest < 0) {
-                return this.ROMAN_DIGITS[baseIndex]+ this.ROMAN_DIGITS[baseIndex+1]
-            }
-            return this.ROMAN_DIGITS[baseIndex+1] + this.ROMAN_DIGITS[baseIndex].repeat(rest)
-        }
-        if(arabicDigit === 9) {
-            return this.ROMAN_DIGITS[baseIndex] + this.ROMAN_DIGITS[baseIndex+2]
-        }
+        return this.getFirstSummand(arabicDigit,baseIndex) + this.getSecondSummand(arabicDigit,baseIndex)
+    }
+
+    private isNumberWithSubstraction(arabicDigit: number): boolean {
+        return arabicDigit % 5 === 4
+    }
+
+    private getSubtrahend(baseIndex: number): string {
+        return this.ROMAN_DIGITS[baseIndex]
+    }
+
+    private getMinuend(arabicDigit: number, baseIndex: number): string {
+        return this.ROMAN_DIGITS[baseIndex+1+Math.floor(arabicDigit/5)];
+    }
+
+    private getSecondSummand(arabicDigit: number, baseIndex: number): string {
+        return this.ROMAN_DIGITS[baseIndex].repeat(arabicDigit % 5)
+    }
+
+    private getFirstSummand(arabicDigit: number, baseIndex: number): string {
+        return arabicDigit >= 5 ? this.ROMAN_DIGITS[baseIndex+1] : ""
     }
 }
 
